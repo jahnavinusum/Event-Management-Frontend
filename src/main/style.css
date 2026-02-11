@@ -1,0 +1,234 @@
+.hero {
+  height: 100vh;              /* FULL SCREEN */
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.55); /* dark overlay */
+  color: white;
+  text-align: center;
+  padding: 60px 40px;
+  border-radius: 12px;
+  max-width: 700px;
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-primary {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #333;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  opacity: 0.85;
+}
+.hero {
+  position: relative; /* REQUIRED for corner positioning */
+}
+
+/* Names at corner */
+.hero-credit {
+  position: absolute;
+  bottom: 100px;
+  right: 25px;
+
+  font-size: 0.95rem;
+  color: #ffffff;
+  opacity: 0.9;
+
+  background: rgba(0, 0, 0, 0.45);
+  padding: 6px 14px;
+  border-radius: 20px;
+  z-index: 2;
+}
+/* ===================== */
+/* ABOUT PAGE STYLES */
+/* ===================== */
+
+.about-container {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 900px;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+}
+/* ===================== */
+/* ABOUT FULLSCREEN HERO */
+/* ===================== */
+
+.about-hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* BLUR LAYER */
+.about-blur {
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  filter: blur(8px);
+  transform: scale(1.1); /* prevents edge cut */
+}
+
+/* TEXT OVERLAY */
+.about-overlay {
+  position: relative;
+  z-index: 2;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+
+  text-align: center;
+  padding: 40px;
+}
+
+.about-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.about-overlay p {
+  max-width: 800px;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+/* Hero without background image */
+.hero-no-image {
+  background: linear-gradient(135deg, #5f2c82, #49a09d);
+}
+/* ===================== */
+/* HOME HERO WITH BLUR */
+/* ===================== */
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Blur layer */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  background: inherit;
+  filter: blur(8px);
+  z-index: 1;
+}
+
+/* Keep content above blur */
+/* Keep content above blur */
+.hero-overlay {
+  position: relative;   /* stay in flex center */
+  z-index: 2;
+}
+
+
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+/* Fullscreen background container */
+.background-blur {
+  position: fixed;
+  inset: 0;
+  background: inherit;
+  filter: blur(14px);
+  transform: scale(1.1);
+  z-index: -2;
+}
+
+
+/* Actual background image */
+.background-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  background: url('../assets/about.jpg') no-repeat center center;
+  background-size: cover;
+}
+/* Dark overlay above blur */
+.app-overlay {
+  position: relative;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+
+/* Make navbar text white */
+.navbar,
+.navbar a {
+  color: white;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
