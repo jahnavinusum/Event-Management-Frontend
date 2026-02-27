@@ -13,17 +13,6 @@ export default function About() {
       {/* Content */}
       <div className="about-overlay">
         <h1>About Event Management</h1>
-
-        <p>
-          Hello all,
-          <br /><br />
-          As a part of our skill development project this semester, we have made
-          this event management platform which has 3 pages:
-          <strong> Customer</strong>, <strong> Admin</strong>, and
-          <strong> Manager</strong>.
-          <br /><br />
-          Please go through them and give us your feedback.
-        </p>
       </div>
     </div>
   );
